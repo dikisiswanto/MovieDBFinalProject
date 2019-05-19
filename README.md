@@ -17,11 +17,7 @@ Project ini dikerjakan secara tim untuk memenuhi tugas mata kuliah Pemrograman A
 ## Daftar Tugas
 
 - [x] Aplikasi minimal mempunyai 2 screen (activity dan fragment)
-
 - [x] Main activity memuat list data yang diambil dari data API yang dipilih
-
 - [x] List data dalam bentuk recyclerview dengan layout CardView
-
 - [x] Saat memilih salah satu item di list, tampilkan screen activity/fragment baru yang memuat detail item tersebut
-
 - [x] Aplikasi memanfaatkan parcelable untuk komunikasi data antar fragment/activity
