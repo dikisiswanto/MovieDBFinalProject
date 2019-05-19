@@ -11,11 +11,7 @@ Project ini dikerjakan secara tim untuk memenuhi tugas mata kuliah Pemrograman A
 
 ## Tampilan
 
-<img src="https://i.ibb.co/F8MXDV5/Screenshot-1558306866.png" width="256px">
-
-<img src="https://i.ibb.co/TY5TJCJ/Screenshot-1558306890.png" width="256px">
-
-<img src="https://i.ibb.co/rv26ByZ/Screenshot-1558306898.png" width="256px">
+<img src="https://i.ibb.co/F8MXDV5/Screenshot-1558306866.png" width="256px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.ibb.co/TY5TJCJ/Screenshot-1558306890.png" width="256px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.ibb.co/rv26ByZ/Screenshot-1558306898.png" width="256px">
 
 
 ## Daftar Tugas
