@@ -11,19 +11,21 @@ Project ini dikerjakan secara tim untuk memenuhi tugas mata kuliah Pemrograman A
 
 ## Tampilan
 
-![Screenshots](https://i.ibb.co/F8MXDV5/Screenshot-1558306866.png)
-![Screenshots](https://i.ibb.co/TY5TJCJ/Screenshot-1558306890.png)
-![Screenshots](https://i.ibb.co/rv26ByZ/Screenshot-1558306898.png)
+<img src="https://i.ibb.co/F8MXDV5/Screenshot-1558306866.png" width="256px">
+
+<img src="https://i.ibb.co/TY5TJCJ/Screenshot-1558306890.png" width="256px">
+
+<img src="https://i.ibb.co/rv26ByZ/Screenshot-1558306898.png" width="256px">
 
 
 ## Daftar Tugas
 
-[x] Aplikasi minimal mempunyai 2 screen (activity dan fragment)
+- [x] Aplikasi minimal mempunyai 2 screen (activity dan fragment)
 
-[x] Main activity memuat list data yang diambil dari data API yang dipilih
+- [x] Main activity memuat list data yang diambil dari data API yang dipilih
 
-[x] List data dalam bentuk recyclerview dengan layout CardView
+- [x] List data dalam bentuk recyclerview dengan layout CardView
 
-[x] Saat memilih salah satu item di list, tampilkan screen activity/fragment baru yang memuat detail item tersebut
+- [x] Saat memilih salah satu item di list, tampilkan screen activity/fragment baru yang memuat detail item tersebut
 
-[x] Aplikasi memanfaatkan parcelable untuk komunikasi data antar fragment/activity
+- [x] Aplikasi memanfaatkan parcelable untuk komunikasi data antar fragment/activity
