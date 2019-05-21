@@ -1,4 +1,4 @@
-package unhas.informatics.moviemodelfinalproject;
+package unhas.informatics.moviedbfinalproject;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -8,6 +8,17 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 class MovieItems implements Parcelable {
+    public static final Parcelable.Creator<MovieItems> CREATOR = new Parcelable.Creator<MovieItems>() {
+        @Override
+        public MovieItems createFromParcel(Parcel source) {
+            return new MovieItems(source);
+        }
+
+        @Override
+        public MovieItems[] newArray(int size) {
+            return new MovieItems[size];
+        }
+    };
     private int id;
     private String title;
     private double rating;
@@ -36,6 +47,16 @@ class MovieItems implements Parcelable {
         } catch (JSONException e) {
             Log.d("Exception", e.getMessage());
         }
+    }
+
+    protected MovieItems(Parcel in) {
+        this.id = in.readInt();
+        this.title = in.readString();
+        this.rating = in.readDouble();
+        this.releaseDate = in.readString();
+        this.description = in.readString();
+        this.poster = in.readString();
+        this.backdrop = in.readString();
     }
 
     public int getId() {
@@ -109,26 +130,4 @@ class MovieItems implements Parcelable {
         dest.writeString(this.poster);
         dest.writeString(this.backdrop);
     }
-
-    protected MovieItems(Parcel in) {
-        this.id = in.readInt();
-        this.title = in.readString();
-        this.rating = in.readDouble();
-        this.releaseDate = in.readString();
-        this.description = in.readString();
-        this.poster = in.readString();
-        this.backdrop = in.readString();
-    }
-
-    public static final Parcelable.Creator<MovieItems> CREATOR = new Parcelable.Creator<MovieItems>() {
-        @Override
-        public MovieItems createFromParcel(Parcel source) {
-            return new MovieItems(source);
-        }
-
-        @Override
-        public MovieItems[] newArray(int size) {
-            return new MovieItems[size];
-        }
-    };
 }

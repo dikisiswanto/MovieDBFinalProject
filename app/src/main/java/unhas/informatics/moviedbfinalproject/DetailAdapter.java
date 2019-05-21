@@ -1,4 +1,4 @@
-package unhas.informatics.moviemodelfinalproject;
+package unhas.informatics.moviedbfinalproject;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -13,9 +13,9 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
 public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.DetailViewHolder> {
-    private Context context;
-    MovieItems mData;
     private static final String IMAGE_ENDPOINT = "https://image.tmdb.org/t/p/w342";
+    MovieItems mData;
+    private Context context;
 
     public DetailAdapter(Context context) {
         this.context = context;
@@ -47,6 +47,7 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.DetailView
     public class DetailViewHolder extends RecyclerView.ViewHolder {
         ImageView backdrop, poster;
         TextView title, rating, description, release_date;
+
         public DetailViewHolder(@NonNull View itemView) {
             super(itemView);
             backdrop = itemView.findViewById(R.id.backdrop);

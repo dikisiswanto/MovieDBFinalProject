@@ -1,4 +1,4 @@
-package unhas.informatics.moviemodelfinalproject;
+package unhas.informatics.moviedbfinalproject;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
@@ -28,13 +28,13 @@ public class MainViewModel extends ViewModel {
         return listMovie;
     }
 
-    void setMovies(String movie){
+    void setMovies(String movie) {
         //Request via Web API
         AsyncHttpClient client = new AsyncHttpClient();
         final ArrayList<MovieItems> listItems = new ArrayList<>();
         String url = API_ENDPOINT +
                 "discover/movie?sort_by=popularity.desc&page=1&api_key=" + API_KEY;
-        if (movie != null){
+        if (movie != null) {
             url = API_ENDPOINT + "search/movie?query=" + movie + "&api_key=" + API_KEY;
         }
 
@@ -42,7 +42,7 @@ public class MainViewModel extends ViewModel {
         client.get(url, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                try{
+                try {
                     String result = new String(responseBody);
                     JSONObject responseObject = new JSONObject(result);
                     JSONArray list = responseObject.getJSONArray("results");
@@ -53,7 +53,7 @@ public class MainViewModel extends ViewModel {
                     }
                     listMovie.postValue(listItems);
 
-                }catch (Exception e){
+                } catch (Exception e) {
                     Log.d("Exception", e.getMessage());
                 }
             }

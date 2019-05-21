@@ -1,4 +1,4 @@
-package unhas.informatics.moviemodelfinalproject;
+package unhas.informatics.moviedbfinalproject;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,9 +17,9 @@ import com.bumptech.glide.request.RequestOptions;
 import java.util.ArrayList;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
-    private Context context;
-    ArrayList<MovieItems> mData = new ArrayList<>();
     private static final String IMAGE_ENDPOINT = "https://image.tmdb.org/t/p/w185";
+    ArrayList<MovieItems> mData = new ArrayList<>();
+    private Context context;
 
     public MovieAdapter(Context context) {
         this.context = context;
@@ -34,7 +34,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
     @Override
     public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View movieView = LayoutInflater.from(viewGroup.getContext())
-                        .inflate(R.layout.cardview_movie_item, viewGroup, false);
+                .inflate(R.layout.cardview_movie_item, viewGroup, false);
         return new MovieViewHolder(movieView);
     }
 
